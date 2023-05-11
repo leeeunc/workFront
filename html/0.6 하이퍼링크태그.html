@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼링크관련태그</title>
+</head>
+<body>
+    <a href='#top'></a>
+    <h1>하이퍼 링크 태그</h1>
+    <!-- 
+        하이퍼링크 기능은 웹 문서가 다른 문서와 구분되는 가장 핵심적인 기능이다.
+        클릭을 통해 연결된 곳으로 이동하여 사용을 편리하게 해주는 기능으로
+        텍스트를 클릭해 이동하는 방법, 이미지를 클릭해 이동하는 방법 등이 존재한다.
+        또한 페이지 내에서 링크를 통한 이동도 가능하다.
+    -->
+
+    <h3>a 태그를 이요한 하이퍼링크</h3>
+    <ul>
+        <li><a href = '01. 글자관련태그.html' target='black'> 글자관련 태그들</a></li>
+        <li><a href = '02. 목록관련태그.html' target='black'> 목록관련 태그들</a></li>
+        <li><a href = '03. 표관련태그.html' target='black'> 표관련 태그들</a></li>
+        <li><a href = '04. 이미지관련태그.html' target='black'> 이미지관련 태그들</a></li>
+        <li><a href = '05. 미디어관련태그.html' target='black'> 미디어관련 태그들</a></li>
+    </ul>
+
+    <h3>네트워크가 연결된 상황이라면 
+        현재 서비스되고 있는 웹 페이지도 링크가 가능하다
+    </h3>
+    <ul>
+        <li><a href = 'http://www.naver.com' target='_blank'>네이버</a></li>
+        <li><a href = 'http://www.google.com'>구글</a></li>
+    </ul>
+
+    <h3>img태그를 이용해 링크 만들기</h3>
+    <a href='실습1. 레드향.html'>
+         <img src="images/salad.jpg" alt='레드향상품정보 페이지로 이동'
+         width='100px'>
+    </a>
+
+    <h1 >한 페이지 내에서 점프하는 앵커 만들기</h1>
+    <ul>
+        <li>
+            <!-- #id-->
+            <a href='#content1'> 기사내용1</a>
+        </li>
+    </ul>    <ul>
+        <li>
+            <!-- #id-->
+            <a href='#content2'> 기사내용2</a>
+        </li>
+    </ul>    <ul>
+        <li>
+            <!-- #id-->
+            <a href='#content3'> 기사내용3</a>
+        </li>
+    </ul> 
+    <h4 id='content1' >기사내용1</h4>
+    <h4 id='content2'>기사내용2</h4>
+    삼둥이 어미 ‘펜자’는 별다른 증상을 보이지 않고 있으며 사랑·해랑과 분리된 상태다.
+
+공원 측은 서울시보건환경연구원과 함께 정확한 감염 경로를 조사하고 있다.
+
+공원은 홈페이지에 올린 공지에서 “앞으로 관련 진행 상황을 추가로 공개할 것”이라고 말했다.
+
+파랑과 사랑, 해랑은 멸종위기 야생동물 1급 시베리아호랑이다.
+
+국제적으로 혈통을 공인받은 아빠 로스토프와 엄마 펜자 사이에서 지난해 4월 태어났다.
+
+러시아 정부는 2011년 한·러시아 정상 수교 20주년을 기념해 로스토프와 펜자를 우리나라에 기증했다.
+
+로스토프와 펜자는 각각 12세로 노령이었지만 약 9년 만에 번식에 성공했다.
+
+공원 측은 지난 4월 삼둥이 돌잔치를 열기도 했다.
+
+삼둥이 이름은 공원 측이 사회관계망서비스에 공모해 시민 투표로 선정됐다.
+
+호랑이 ‘랑’을 돌림자로 하며 파랑은 ‘파란빛처럼 시원한 성격’이라는 의미다.
+
+사랑은 ‘사랑을 듬뿍 받길’을, 해랑은 ‘해처럼 밝은 아이’라는 뜻이다.
+[출처] - 국민일보
+[원본링크] - https://news.kmib.co.kr/article/view.asp?arcid=0018238643&code=61121111&stg=ws_real
+    <h4 id='content3'>기사내용3</h4>
+<a href='#top'>맨 처음으로 가기</a>
+
+        <h1>웹문서에 pdf파일 삽입하기</h1>
+
+        <!--
+            data : 파일 지정
+            width, height : 너비, 높이 지정
+        -->
+
+
+        <object width='800' height='700' data='실습1. 레드향.html'></object>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습7</title>
+    <style>
+    ul {
+        list-style:none;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>주문하기</h1>
+    <form>
+        <!-- required 필수로 입력해야하는 조건-->
+        <p><label for='name'>고객명 : <input type='text' name='name' id='name' required ></label></p>
+        <p><label for='tel'>전화번호 : <input type="tel" name="tel" id="tel" required></label></p>
+        <p><label for='email'>E-mail : <input type="email" name="email" id="email" required></label></p>
+    
+    <fieldset>
+    <legend>피자사이즈</legend>
+    
+        <p><label for='size_s'><input type='radio' name='size' id='size_s' value='s'>Small</label></p>
+        <p><label for='size_m'><input type='radio' name='size' id='size_m' value='m'>Medium</label></p>
+        <p><label for='size_l'><input type='radio' name='size' id='size_l' value='l' checked>Large</label></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>토핑 선택</legend>
+        <p><input type="checkbox" name="topping" id="Bacon"> <label for='Bacon'>베이컨</label></p>
+        <p><input type="checkbox" name="topping" id="cheese"> <label for='cheese'>치즈</label></p>
+        <p><input type="checkbox" name="topping" id="onion"> <label for='onion'>양파</label></p>
+        <p><input type="checkbox" name="topping" id="mushroom"> <label for='mushroom'>버섯</label></p>
+        
+    </fieldset>
+
+    <p>희망 배송 일자 : <input type="date" name="" id=""></p>
+    <p>희망 배송 시간 : <input type="time" name='' id=''></p>
+    <p>배송 시 요청사항 : <textarea name="" id="" cols="20" rows="3"></textarea></p>
+    
+    <input type="submit" value="주문하기">
+</form>
+    
+</body>
+</html>

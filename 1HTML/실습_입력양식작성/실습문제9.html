@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제9</title>
+
+</head>
+    <style>
+        ul{
+            list-style: none;
+        }
+    </style>
+<body>
+    <form>
+    <h1>회원가입</h1>
+    <fieldset>
+        <legend>필수 입력 사항</legend>
+        <table>
+        
+    <tr>
+        <th><label for='userId'> ID</label></th>
+        <td ><input type="text" name="userId" id="userId" placeholder='아이디 10글자 이내' min='10'
+                 size='30px'></td>
+        <td><input type="button" value="중복확인"></td>
+    </tr>
+    <tr>
+        <th><label for='userPw'> 비밀번호</label></th> 
+        <td><input type="password" name="userPw" id="userPw" placeholder='영문, 숫자, 특수문자 포함 8자 이상'
+                        min='8', size='30px'></td>
+        <!-- 칸이 없어도 빈칸생성하는게 좋음-->
+        <td></td>
+    </tr>
+    <tr>
+        <th><label for='pwCheck'> 비밀번호 확인</label></th>
+        <td> <input type="password" name="pwCheck" id="pwCheck" size='30px'></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th><label for='email'> Email </label></th>
+        <td> <input type="email" name="email" id="email" list='Email' size='30px'></td>
+    
+        <td>
+            <select name='emailAddr' id='emailAddr'>
+                <option value="etc" selected>직접입력</option>
+                <!-- 2가지 방법 가능-->
+                <option value="naver.com">네이버</option>
+                <option value="daum.net" label='다음'></option>
+            </select>
+        </td>
+    </tr>
+    </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>추가 정보</legend>
+    <ul>
+        <li><label for='addFile'> 프로필 사진 : </label> <input type="file" name="addFile" id="addFile"></li>
+        
+        <li><label for='gender'> 성별 : </label>
+            <input type="radio" name="gender" id="gender" value='M' checked >남자
+                <input type="radio" name="gender" id="gender" value='F'>여자</li>
+        
+        <li>생년월일 <input type="date" name="birth" id="birth"></li>
+        
+    <p>취미 :
+        <br>
+        <input type="checkbox" name="hobby" id="hobby1" value='baseball'><label for='hobby1'> 야구</label>
+        <input type="checkbox" name="hobby" id="hobby2" value='basketball'><label for='hobby2'> 농구</label>
+        <input type="checkbox" name="hobby" id="hobby3" value='football'><label for='hobby3'> 축구</label>
+        <br>
+        <input type="checkbox" name="hobby" id="hobby4" value='study' checked><label for='hobby4'> 공부</label>
+        <input type="checkbox" name="hobby" id="hobby5" value='music'><label for='hobby5'> 음악감상</label>
+        <br>
+        <input type="checkbox" name="hobby" id="hobby6" value='etc'><label for='hobby6'> 기타 : </label>
+        <input type="text" name="" id="">
+    </p>
+        
+        자기소개
+        <br>
+        <!-- resize:none == 사이즈변경 못하게 함-->
+        <textarea name='introduce' id='introduce' rows='4' cols='40' style='resize:none'></textarea>
+
+    </ul>
+    </fieldset>
+    <br>
+    <input type="submit" value="회원가입">
+    <input type="reset" value="다시입력">
+    <input type="button" value="이전으로">
+
+</form>
+</body>
+</html>
